@@ -1,0 +1,9 @@
+{
+  "/cidades/page": "app/cidades/page.js",
+  "/criar-evento/page": "app/criar-evento/page.js",
+  "/eventos/[id]/page": "app/eventos/[id]/page.js",
+  "/eventos/page": "app/eventos/page.js",
+  "/login/page": "app/login/page.js",
+  "/page": "app/page.js",
+  "/registro/page": "app/registro/page.js"
+}

@@ -1,0 +1,278 @@
+[00:00:02.005] Server  LOG      ✓ Ready in 1301ms
+[00:00:02.066] Server  WARN     ⚠ Cross origin request detected from 192.168.18.120 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+[00:00:05.140] Server  LOG      ○ Compiling /registro ...
+[00:00:10.341] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:10.666] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:10.666] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:10.666] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.18.120:3001/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://192.168.18.120:3001/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764521935122}
+[00:00:11.942] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.18.120:3001/registro color: rgb(120, 120, 120) color: inherit {"dp":"/registro","o":"http://192.168.18.120:3001/registro","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764521936401}
+[00:05:07.308] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:07.711] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:05:07.711] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/registro","route":"/registro"}
+[00:05:07.711] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.18.120:3001/registro color: rgb(120, 120, 120) color: inherit {"dp":"/registro","o":"http://192.168.18.120:3001/registro","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764522232168}
+[00:05:55.837] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:56.212] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:05:56.212] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/registro","route":"/registro"}
+[00:05:56.212] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.18.120:3001/registro color: rgb(120, 120, 120) color: inherit {"dp":"/registro","o":"http://192.168.18.120:3001/registro","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764522280659}
+[00:06:06.249] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.18.120:3001/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://192.168.18.120:3001/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764522290694}
+[00:06:27.731] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.18.120:3001/criar-evento color: rgb(120, 120, 120) color: inherit {"dp":"/criar-evento","o":"http://192.168.18.120:3001/criar-evento","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764522312116}
+[00:08:56.200] Server  LOG      ✓ Compiled in 73ms
+[00:09:01.701] Server  LOG      ✓ Compiled in 89ms
+[00:09:03.049] Server  LOG      ✓ Compiled in 126ms
+[00:09:03.780] Browser ERROR   uncaughtError: ReferenceError: city is not defined
+[00:09:07.830] Server  LOG      ✓ Compiled in 197ms
+[00:09:08.778] Browser ERROR   ./components/event-form.tsx:153:34
+Parsing ecmascript source code failed
+  151 |               </SelectItem>
+  152 |             ))} */}
+> 153 |             <SelectItem key={city.1} value={city.id.toString()}>
+      |                                  ^^
+  154 |                 {city.name}, {city.state}
+  155 |               </SelectItem>
+  156 |           </SelectContent>
+
+Expected '</', got 'numeric literal (0.1, .1)'
+
+Import trace:
+  Server Component:
+    ./components/event-form.tsx
+    ./app/criar-evento/page.tsx
+[00:09:11.413] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:09:11.981] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:12.773] Browser ERROR   uncaughtError: ReferenceError: city is not defined
+[00:09:13.871] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:09:13.881] Server  LOG      ✓ Compiled in 76ms
+[00:09:14.282] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:14.790] Browser ERROR   uncaughtError: ReferenceError: city is not defined
+[00:09:17.588] Server  LOG      ✓ Compiled in 78ms
+[00:09:17.772] Browser ERROR   ./components/event-form.tsx:153:42
+Parsing ecmascript source code failed
+  151 |               </SelectItem>
+  152 |             ))} */}
+> 153 |             <SelectItem key={1} value={1.toString()}>
+      |                                          ^^^^^^^^
+  154 |                 {city.name}, {city.state}
+  155 |               </SelectItem>
+  156 |           </SelectContent>
+
+Expected '</', got 'toString'
+
+Import trace:
+  Server Component:
+    ./components/event-form.tsx
+    ./app/criar-evento/page.tsx
+[00:09:21.769] Browser ERROR   ./components/event-form.tsx:153:42
+Parsing ecmascript source code failed
+  151 |               </SelectItem>
+  152 |             ))} */}
+> 153 |             <SelectItem key={1} value={1.toString()}>
+      |                                          ^^^^^^^^
+  154 |                 {Balsas}, {city.state}
+  155 |               </SelectItem>
+  156 |           </SelectContent>
+
+Expected '</', got 'toString'
+
+Import trace:
+  Server Component:
+    ./components/event-form.tsx
+    ./app/criar-evento/page.tsx
+[00:09:25.779] Browser ERROR   ./components/event-form.tsx:153:42
+Parsing ecmascript source code failed
+  151 |               </SelectItem>
+  152 |             ))} */}
+> 153 |             <SelectItem key={1} value={1.toString()}>
+      |                                          ^^^^^^^^
+  154 |                 {Balsas}, {}
+  155 |               </SelectItem>
+  156 |           </SelectContent>
+
+Expected '</', got 'toString'
+
+Import trace:
+  Server Component:
+    ./components/event-form.tsx
+    ./app/criar-evento/page.tsx
+[00:09:28.782] Browser ERROR   ./components/event-form.tsx:153:42
+Parsing ecmascript source code failed
+  151 |               </SelectItem>
+  152 |             ))} */}
+> 153 |             <SelectItem key={1} value={1.toString()}>
+      |                                          ^^^^^^^^
+  154 |                 {Balsas}, {MA}
+  155 |               </SelectItem>
+  156 |           </SelectContent>
+
+Expected '</', got 'toString'
+
+Import trace:
+  Server Component:
+    ./components/event-form.tsx
+    ./app/criar-evento/page.tsx
+[00:09:31.780] Browser ERROR   ./components/event-form.tsx:153:42
+Parsing ecmascript source code failed
+  151 |               </SelectItem>
+  152 |             ))} */}
+> 153 |             <SelectItem key={1} value={1.toString()}>
+      |                                          ^^^^^^^^
+  154 |                 {Balsas'}, {MA}
+  155 |               </SelectItem>
+  156 |           </SelectContent>
+
+Expected '</', got 'toString'
+
+Import trace:
+  Server Component:
+    ./components/event-form.tsx
+    ./app/criar-evento/page.tsx
+[00:09:32.770] Browser ERROR   ./components/event-form.tsx:153:42
+Parsing ecmascript source code failed
+  151 |               </SelectItem>
+  152 |             ))} */}
+> 153 |             <SelectItem key={1} value={1.toString()}>
+      |                                          ^^^^^^^^
+  154 |                 {Balsas"}, {MA}
+  155 |               </SelectItem>
+  156 |           </SelectContent>
+
+Expected '</', got 'toString'
+
+Import trace:
+  Server Component:
+    ./components/event-form.tsx
+    ./app/criar-evento/page.tsx
+[00:09:34.783] Browser ERROR   ./components/event-form.tsx:153:42
+Parsing ecmascript source code failed
+  151 |               </SelectItem>
+  152 |             ))} */}
+> 153 |             <SelectItem key={1} value={1.toString()}>
+      |                                          ^^^^^^^^
+  154 |                 {"Balsas"}, {MA}
+  155 |               </SelectItem>
+  156 |           </SelectContent>
+
+Expected '</', got 'toString'
+
+Import trace:
+  Server Component:
+    ./components/event-form.tsx
+    ./app/criar-evento/page.tsx
+[00:09:36.775] Browser ERROR   ./components/event-form.tsx:153:42
+Parsing ecmascript source code failed
+  151 |               </SelectItem>
+  152 |             ))} */}
+> 153 |             <SelectItem key={1} value={1.toString()}>
+      |                                          ^^^^^^^^
+  154 |                 {"Balsas"}, {"MA"}
+  155 |               </SelectItem>
+  156 |           </SelectContent>
+
+Expected '</', got 'toString'
+
+Import trace:
+  Server Component:
+    ./components/event-form.tsx
+    ./app/criar-evento/page.tsx
+[00:09:41.317] Server  LOG      ✓ Compiled in 107ms
+[00:09:41.769] Browser ERROR   ./components/event-form.tsx:153:40
+Parsing ecmascript source code failed
+  151 |               </SelectItem>
+  152 |             ))} */}
+> 153 |             <SelectItem key={1} value={"1.toString()}>
+      |                                        ^^^^^^^^^^^^^^^
+  154 |                 {"Balsas"}, {"MA"}
+  155 |               </SelectItem>
+  156 |           </SelectContent>
+
+Unterminated string constant
+
+Import trace:
+  Server Component:
+    ./components/event-form.tsx
+    ./app/criar-evento/page.tsx
+[00:09:42.392] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:09:42.797] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:43.775] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:09:43.775] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/criar-evento","route":"/criar-evento"}
+[00:09:43.775] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/login","route":"/login"}
+[00:09:43.775] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.18.120:3001/criar-evento color: rgb(120, 120, 120) color: inherit {"dp":"/criar-evento","o":"http://192.168.18.120:3001/criar-evento","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764522507657}
+[00:09:43.775] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.18.120:3001/login color: rgb(120, 120, 120) color: inherit {"dp":"/login","o":"http://192.168.18.120:3001/login","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764522507658}
+[00:09:47.047] Server  LOG      ✓ Compiled in 82ms
+[00:09:47.778] Browser ERROR   ./components/event-form.tsx:153:44
+Parsing ecmascript source code failed
+  151 |               </SelectItem>
+  152 |             ))} */}
+> 153 |             <SelectItem key={1} value={"1".()}>
+      |                                            ^
+  154 |                 {"Balsas"}, {"MA"}
+  155 |               </SelectItem>
+  156 |           </SelectContent>
+
+Expected '</', got '('
+
+Import trace:
+  Server Component:
+    ./components/event-form.tsx
+    ./app/criar-evento/page.tsx
+[00:09:48.508] Server  LOG      ✓ Compiled in 111ms
+[00:09:48.779] Browser ERROR   ./components/event-form.tsx:153:44
+Parsing ecmascript source code failed
+  151 |               </SelectItem>
+  152 |             ))} */}
+> 153 |             <SelectItem key={1} value={"1".}>
+      |                                            ^
+  154 |                 {"Balsas"}, {"MA"}
+  155 |               </SelectItem>
+  156 |           </SelectContent>
+
+Expected '</', got '}'
+
+Import trace:
+  Server Component:
+    ./components/event-form.tsx
+    ./app/criar-evento/page.tsx
+[00:09:51.912] Server  LOG      ✓ Compiled in 153ms
+[00:09:59.343] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.18.120:3001/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://192.168.18.120:3001/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764522523795}
+[00:10:02.170] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.18.120:3001/criar-evento color: rgb(120, 120, 120) color: inherit {"dp":"/criar-evento","o":"http://192.168.18.120:3001/criar-evento","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764522526575}
+[00:27:24.882] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:25.168] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:27:25.168] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/criar-evento","route":"/criar-evento"}
+[00:27:25.168] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/login","route":"/login"}
+[00:27:25.168] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.18.120:3001/criar-evento color: rgb(120, 120, 120) color: inherit {"dp":"/criar-evento","o":"http://192.168.18.120:3001/criar-evento","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764523569619}
+[00:27:25.168] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.18.120:3001/login color: rgb(120, 120, 120) color: inherit {"dp":"/login","o":"http://192.168.18.120:3001/login","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764523569619}
+[00:27:27.369] Browser ERROR   Erro ao buscar cidades: {}
+[00:28:58.764] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.18.120:3001/criar-evento color: rgb(120, 120, 120) color: inherit {"dp":"/criar-evento","o":"http://192.168.18.120:3001/criar-evento","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764523663134}
+[00:28:59.518] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.18.120:3001/login color: rgb(120, 120, 120) color: inherit {"dp":"/login","o":"http://192.168.18.120:3001/login","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764523663972}
+[00:29:00.512] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:29:00.806] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:29:00.806] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/login","route":"/login"}
+[00:29:00.806] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.18.120:3001/login color: rgb(120, 120, 120) color: inherit {"dp":"/login","o":"http://192.168.18.120:3001/login","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764523665261}
+[00:29:03.494] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.18.120:3001/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://192.168.18.120:3001/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764523667947}
+[00:29:07.127] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.18.120:3001/criar-evento color: rgb(120, 120, 120) color: inherit {"dp":"/criar-evento","o":"http://192.168.18.120:3001/criar-evento","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764523671441}
+[00:30:12.929] Server  LOG      ✓ Compiled in 80ms
+[00:30:16.420] Server  LOG      ✓ Compiled in 70ms
+[00:30:21.395] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:30:22.120] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:30:22.120] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/criar-evento","route":"/criar-evento"}
+[00:30:22.120] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.18.120:3001/criar-evento color: rgb(120, 120, 120) color: inherit {"dp":"/criar-evento","o":"http://192.168.18.120:3001/criar-evento","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764523746525}
+[00:30:22.120] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.18.120:3001/login color: rgb(120, 120, 120) color: inherit {"dp":"/login","o":"http://192.168.18.120:3001/login","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764523746578}
+[00:30:24.348] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.18.120:3001/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://192.168.18.120:3001/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764523748801}
+[00:30:25.716] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.18.120:3001/criar-evento color: rgb(120, 120, 120) color: inherit {"dp":"/criar-evento","o":"http://192.168.18.120:3001/criar-evento","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764523750070}
+[00:30:42.797] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.18.120:3001/eventos color: rgb(120, 120, 120) color: inherit {"dp":"/eventos","o":"http://192.168.18.120:3001/eventos","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764523767093}
+[00:41:13.053] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.18.120:3001/cidades color: rgb(120, 120, 120) color: inherit {"dp":"/cidades","o":"http://192.168.18.120:3001/cidades","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764524397507}
+[00:41:14.853] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.18.120:3001/eventos color: rgb(120, 120, 120) color: inherit {"dp":"/eventos","o":"http://192.168.18.120:3001/eventos","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764524399283}
+[00:41:15.668] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.18.120:3001/cidades color: rgb(120, 120, 120) color: inherit {"dp":"/cidades","o":"http://192.168.18.120:3001/cidades","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764524400115}
+[00:41:17.387] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.18.120:3001/eventos color: rgb(120, 120, 120) color: inherit {"dp":"/eventos","o":"http://192.168.18.120:3001/eventos","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764524401824}
+[00:41:19.441] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.18.120:3001/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://192.168.18.120:3001/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764524403899}
+[00:43:53.499] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.18.120:3001/eventos color: rgb(120, 120, 120) color: inherit {"dp":"/eventos","o":"http://192.168.18.120:3001/eventos","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764524557920}
+[00:43:57.371] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.18.120:3001/eventos/8 color: rgb(120, 120, 120) color: inherit {"dp":"/eventos/[id]","o":"http://192.168.18.120:3001/eventos/8","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764524561827}
+[00:44:06.961] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.18.120:3001/eventos color: rgb(120, 120, 120) color: inherit {"dp":"/eventos","o":"http://192.168.18.120:3001/eventos","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764524571388}
+[00:44:19.412] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.18.120:3001/eventos/8 color: rgb(120, 120, 120) color: inherit {"dp":"/eventos/[id]","o":"http://192.168.18.120:3001/eventos/8","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764524583871}
+[00:44:25.461] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.18.120:3001/criar-evento color: rgb(120, 120, 120) color: inherit {"dp":"/criar-evento","o":"http://192.168.18.120:3001/criar-evento","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764524589888}
+[00:44:27.443] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.18.120:3001/eventos/8 color: rgb(120, 120, 120) color: inherit {"dp":"/eventos/[id]","o":"http://192.168.18.120:3001/eventos/8","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764524591889}
+[00:44:30.086] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.18.120:3001/eventos color: rgb(120, 120, 120) color: inherit {"dp":"/eventos","o":"http://192.168.18.120:3001/eventos","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764524594521}
+[00:45:15.843] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:45:16.038] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:45:16.038] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/login","route":"/login"}
+[00:45:16.038] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3001/login color: rgb(120, 120, 120) color: inherit {"dp":"/login","o":"http://localhost:3001/login","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764524640485}
