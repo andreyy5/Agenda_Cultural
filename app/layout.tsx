@@ -9,7 +9,7 @@ import { Toaster } from "@/components/ui/toaster"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Agenda Cultural - Eventos Culturais na Sua Cidade",
+  title: "Agenda Cultural - Eventos Culturais na Sua cidade",
   description: "Descubra e participe de eventos culturais incríveis. Teatro, música, cinema, exposições e muito mais.",
   generator: "v0.app",
   icons: {

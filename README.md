@@ -71,7 +71,9 @@ cd backend
 npm install
 \`\`\`
 
-Crie um arquivo \`.env\` baseado no \`.env.example\`:
+Crie um arquivo \`.env\` dentro do backend baseado em: 
+DATABASE_URL="postgresql://postgres:stahl2402@localhost:5432/agendaCultural?schema=public"
+JWT_SECRET=chavesecreta123
 
 \`\`\`env
 DATABASE_URL="postgresql://usuario:senha@localhost:5432/agenda_cultural?schema=public"
@@ -196,76 +198,8 @@ A API utiliza JWT (JSON Web Tokens) para autenticação. Após login ou registro
 Authorization: Bearer {seu_token_jwt}
 \`\`\`
 
-## Hospedagem e Deploy
-
-### Recomendações de Hospedagem
-
-**Frontend (Next.js):**
-- Vercel (recomendado) - Deploy automático com Git
-- Netlify
-- AWS Amplify
-
-**Backend (Node.js):**
-- Render
-- Railway
-- Heroku
-- DigitalOcean App Platform
-
-**Banco de Dados:**
-- Supabase (PostgreSQL gerenciado)
-- Neon
-- Railway PostgreSQL
-- ElephantSQL
-
-### Deploy na Vercel (Frontend)
-
-1. Faça push do código para GitHub/GitLab
-2. Conecte seu repositório na Vercel
-3. Configure a variável de ambiente:
-   - \`NEXT_PUBLIC_API_URL\` = URL da sua API em produção
-4. Deploy automático!
-
-### Deploy no Render (Backend)
-
-1. Crie um novo Web Service no Render
-2. Conecte seu repositório
-3. Configure:
-   - Build Command: \`cd backend && npm install && npx prisma generate\`
-   - Start Command: \`cd backend && npm start\`
-4. Adicione as variáveis de ambiente:
-   - \`DATABASE_URL\`
-   - \`JWT_SECRET\`
-   - \`PORT\`
-5. Deploy!
-
 ## Testes
 
 Use a coleção do Postman para testar os endpoints da API:
 
 [Documentação Postman](https://documenter.getpostman.com/view/49870231/2sB3WsR18b)
-
-## Contribuindo
-
-Este é um projeto educacional desenvolvido para o TED 4 Extensionista. Contribuições são bem-vindas!
-
-1. Faça um fork do projeto
-2. Crie uma branch para sua feature (\`git checkout -b feature/nova-funcionalidade\`)
-3. Commit suas mudanças (\`git commit -m 'Adiciona nova funcionalidade'\`)
-4. Push para a branch (\`git push origin feature/nova-funcionalidade\`)
-5. Abra um Pull Request
-
-## Licença
-
-Este projeto é de código aberto e está disponível sob a licença MIT.
-
-## Autores
-
-Desenvolvido por estudantes da Universidade Brasil para o TED 4 Extensionista.
-
-## Contato e Suporte
-
-Para dúvidas ou suporte, abra uma issue no GitHub.
-
----
-
-**Nota:** Lembre-se de nunca commitar arquivos \`.env\` com credenciais reais. Use sempre \`.env.example\` como template.

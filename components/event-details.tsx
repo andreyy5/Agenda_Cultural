@@ -1,13 +1,27 @@
 "use client"
 
 import { useEffect, useState } from "react"
+import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { Calendar, MapPin, DollarSign, Users, Loader2 } from "lucide-react"
+import { Calendar, MapPin, DollarSign, Users, Loader2, Pencil, Trash2 } from "lucide-react"
 import { format } from "date-fns"
 import { ptBR } from "date-fns/locale"
 import { api } from "@/lib/api"
+import { useAuthStore } from "@/lib/store"
+import { useToast } from "@/hooks/use-toast"
 import Link from "next/link"
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "@/components/ui/alert-dialog"
 
 interface EventDetailsProps {
   eventId: string
@@ -16,6 +30,11 @@ interface EventDetailsProps {
 export function EventDetails({ eventId }: EventDetailsProps) {
   const [event, setEvent] = useState<any>(null)
   const [loading, setLoading] = useState(true)
+  const [deleting, setDeleting] = useState(false)
+
+  const { user } = useAuthStore()
+  const { toast } = useToast()
+  const router = useRouter()
 
   useEffect(() => {
     const fetchEvent = async () => {
@@ -31,6 +50,25 @@ export function EventDetails({ eventId }: EventDetailsProps) {
 
     fetchEvent()
   }, [eventId])
+
+  const handleDelete = async () => {
+    setDeleting(true)
+    try {
+      await api.deleteEvent(eventId)
+      toast({
+        title: "Evento excluído!",
+        description: "O evento foi removido com sucesso.",
+      })
+      router.push("/eventos")
+    } catch (error: any) {
+      toast({
+        title: "Erro ao excluir evento",
+        description: error.message || "Tente novamente mais tarde.",
+        variant: "destructive",
+      })
+      setDeleting(false)
+    }
+  }
 
   if (loading) {
     return (
@@ -52,6 +90,7 @@ export function EventDetails({ eventId }: EventDetailsProps) {
   }
 
   const eventDate = new Date(event.date)
+  const isOwner = user && event.user && user.id === event.user.id
 
   return (
     <div className="max-w-5xl mx-auto px-4 py-8">
@@ -128,6 +167,43 @@ export function EventDetails({ eventId }: EventDetailsProps) {
           <Button className="w-full" size="lg">
             Participar do Evento
           </Button>
+
+          {isOwner && (
+            <div className="flex gap-2">
+              <Button asChild variant="outline" className="flex-1 bg-transparent">
+                <Link href={`/eventos/${eventId}/editar`}>
+                  <Pencil className="h-4 w-4 mr-2" />
+                  Editar
+                </Link>
+              </Button>
+
+              <AlertDialog>
+                <AlertDialogTrigger asChild>
+                  <Button variant="destructive" className="flex-1" disabled={deleting}>
+                    {deleting ? <Loader2 className="h-4 w-4 mr-2 animate-spin" /> : <Trash2 className="h-4 w-4 mr-2" />}
+                    Excluir
+                  </Button>
+                </AlertDialogTrigger>
+                <AlertDialogContent>
+                  <AlertDialogHeader>
+                    <AlertDialogTitle>Tem certeza?</AlertDialogTitle>
+                    <AlertDialogDescription>
+                      Esta ação não pode ser desfeita. O evento será permanentemente excluído.
+                    </AlertDialogDescription>
+                  </AlertDialogHeader>
+                  <AlertDialogFooter>
+                    <AlertDialogCancel>Cancelar</AlertDialogCancel>
+                    <AlertDialogAction
+                      onClick={handleDelete}
+                      className="bg-destructive text-destructive-foreground hover:bg-destructive/90"
+                    >
+                      Excluir
+                    </AlertDialogAction>
+                  </AlertDialogFooter>
+                </AlertDialogContent>
+              </AlertDialog>
+            </div>
+          )}
         </div>
       </div>
     </div>

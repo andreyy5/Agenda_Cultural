@@ -119,7 +119,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$toaster$
 ;
 ;
 const metadata = {
-    title: "Agenda Cultural - Eventos Culturais na Sua Cidade",
+    title: "Agenda Cultural - Eventos Culturais na Sua cidade",
     description: "Descubra e participe de eventos culturais incríveis. Teatro, música, cinema, exposições e muito mais.",
     generator: "v0.app",
     icons: {
